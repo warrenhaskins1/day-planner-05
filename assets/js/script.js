@@ -15,3 +15,10 @@
 
 //6. WHEN I refresh the page
 // THEN the saved events persist
+
+//Start with date display
+var today = moment().format('MMMM Do, YYYY');
+$("#currentDay").text(today);
+
+
+
