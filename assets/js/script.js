@@ -61,6 +61,7 @@ console.log(rowTimeNum);
 console.log(++rowTimeNum);
 
 // function checkTime() {
+
 //     if (hourNow >= rowTimeNum && hourNow <= ++rowTimeNum) {
 //         document.querySelector(".tRow").style.backgroundColor = "#77dd77";
 //         } else if (hourNow > --rowTimeNum) {
@@ -69,33 +70,90 @@ console.log(++rowTimeNum);
 //             document.querySelector(".tRow").style.backgroundColor = "#a11e1e";
 //         }
 // };
-//Dont do this, use jQuery...duh
+var r9 = document.getElementById("r9");
+var r10 = document.getElementById("r10");
+var r11 = document.getElementById("r11");
+var r12 = document.getElementById("r12");
+var r13 = document.getElementById("r13");
+var r14 = document.getElementById("r14");
+var r15 = document.getElementById("r15");
+var r16 = document.getElementById("r16");
+var r17 = document.getElementById("r17");
 
-//Note you have your colors mixed up
-//Need a function that changes EVERY tRow not just one....
-function changeBG() {
+console.log(typeof hourNow);
 
+if (hourNow > 9) {
+    r9.className = "past";
+} else if (hourNow === 9) {
+    r9.className = "present";
+} else if (hourNow < 9) {
+    r9.className = "future";
+}
 
-    $(".tRow").each(function () {
+if (hourNow > 10) {
+    r10.className = "past";
+} else if (hourNow === 10) {
+    r10.className = "present";
+} else if (hourNow < 10) {
+    r10.className = "future";
+}
+
+if (hourNow > 11) {
+    r11.className = "past";
+} else if (hourNow === 11) {
+    r11.className = "present";
+} else if (hourNow < 11) {
+    r11.className = "future";
+}
+
+if (hourNow > 12) {
+    r12.className = "past";
+} else if (hourNow === 12) {
+    r12.className = "present";
+} else if (hourNow < 12) {
+    r12.className = "future";
+}
+
+if (hourNow > 13) {
+    r13.className = "past";
+} else if (hourNow === 13) {
+    r13.className = "present";
+} else if (hourNow < 13) {
+    r13.className = "future";
+}
+
+if (hourNow > 14) {
+    r14.className = "past";
+} else if (hourNow === 14) {
+    r14.className = "present";
+} else if (hourNow < 14) {
+    r14.className = "future";
+}
+
+if (hourNow > 15) {
+    r15.className = "past";
+} else if (hourNow === 15) {
+    r15.className = "present";
+} else if (hourNow < 15) {
+    r15.className = "future";
+}
+
+if (hourNow > 16) {
+    r16.className = "past";
+} else if (hourNow === 16) {
+    r16.className = "present";
+} else if (hourNow < 16) {
+    r16.className = "future";
+}
+
+if (hourNow > 17) {
+    r17.className = "past";
+} else if (hourNow === 17) {
     
-        hourNow.getAttribute("id");
-        console.log(hourNow);
-
-        if (moment > hourNow) {
-            $(this).addClass("future");
-        } else if (moment === hourNow) {
-            $(this).addClass("present");
-        } else {
-            $(this).addClass("past")
-        }
-    })
-};
-
-
-
-
-
-
+    r17.className = "present";
+} else if (hourNow < 1) {
+    r17.className = "future";
+}
 
 
 

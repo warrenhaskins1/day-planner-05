@@ -77,7 +77,7 @@ body {
   }
   
    .present {
-     background-color: "rgb(214, 52, 52)"
+     background-color: rgb(214, 52, 52);
    }
 
    .past {
