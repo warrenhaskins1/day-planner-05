@@ -27,7 +27,7 @@ $("#currentDay").text(today);
 
 //Organize our time variables Start
 //Set moment to var and format for only the hour
-var moment = moment().format('h');
+var moment = moment().format('k');
 console.log(moment);
 console.log(today);
 
@@ -52,7 +52,44 @@ console.log(rowTimeNum);
 // 2.We need to parseInt to convert string to number so that we can compare it against the container value.
 // 3.We can set a custom data Attribute to our container to evaluate against our parsed int from moment().
 // 4. We can write a conditional if val>=num && <=val2 then className = something to change the color based on className (table-success, table-danger etc) based on the future/past/present.
-//5.We need to compare for future and past. Is hourNow greater than rowTime-0.01?=past, else is future
+//5.We need to compare for future and past. Is hourNow greater than rowTime-0.01?=past, else is future.
+//6.Make a function to run the comparisons and setInterval to run every second, return and call function again.
+
+console.log(typeof rowTime);
+console.log(hourNow);
+console.log(rowTimeNum);
+console.log(++rowTimeNum);
+
+// function checkTime() {
+//     if (hourNow >= rowTimeNum && hourNow <= ++rowTimeNum) {
+//         document.querySelector(".tRow").style.backgroundColor = "#77dd77";
+//         } else if (hourNow > --rowTimeNum) {
+//             document.querySelector(".tRow").style.backgroundColor = "#5a5a5a";
+//         } else if (hourNow < ++rowTimeNum) {
+//             document.querySelector(".tRow").style.backgroundColor = "#a11e1e";
+//         }
+// };
+//Dont do this, use jQuery...duh
+
+//Note you have your colors mixed up
+
+
+$(".tRow").each(function () {
+    if (rowTimeNum > hourNow) {
+        $(this).addClass("future");
+    } else if (rowTimeNum === hourNow) {
+        $(this).addClass("present");
+    } else {
+        $(this).addClass("past")
+    }
+})
+
+
+
+
+
+
+
 
 
 

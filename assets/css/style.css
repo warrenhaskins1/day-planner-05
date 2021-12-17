@@ -76,3 +76,6 @@ body {
       letter-spacing: 0.3rem;
   }
   
+   .tRow .present {
+    background-color: #a11e1e;
+  }
