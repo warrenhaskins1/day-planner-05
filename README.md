@@ -1,6 +1,6 @@
 # Business Hour's Workday Scheduler 
-- 
-- 
+- https://github.com/warrenhaskins1/day-planner-05
+- https://warrenhaskins1.github.io/day-planner-05/
 
 ## Description
 
