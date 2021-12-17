@@ -72,17 +72,26 @@ console.log(++rowTimeNum);
 //Dont do this, use jQuery...duh
 
 //Note you have your colors mixed up
+//Need a function that changes EVERY tRow not just one....
+function changeBG() {
 
 
-$(".tRow").each(function () {
-    if (rowTimeNum > hourNow) {
-        $(this).addClass("future");
-    } else if (rowTimeNum === hourNow) {
-        $(this).addClass("present");
-    } else {
-        $(this).addClass("past")
-    }
-})
+    $(".tRow").each(function () {
+    
+        hourNow.getAttribute("id");
+        console.log(hourNow);
+
+        if (moment > hourNow) {
+            $(this).addClass("future");
+        } else if (moment === hourNow) {
+            $(this).addClass("present");
+        } else {
+            $(this).addClass("past")
+        }
+    })
+};
+
+
 
 
 

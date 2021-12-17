@@ -76,6 +76,14 @@ body {
       letter-spacing: 0.3rem;
   }
   
-   .tRow .present {
-    background-color: #a11e1e;
-  }
+   .present {
+     background-color: "rgb(214, 52, 52)"
+   }
+
+   .past {
+     background-color: rgb(190, 187, 187);
+   }
+
+   .future {
+     background-color: #77dd77;
+   }
